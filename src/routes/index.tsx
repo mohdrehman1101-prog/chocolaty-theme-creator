@@ -26,37 +26,37 @@ type CoffeeItem = {
 const coffees: [CoffeeItem, ...CoffeeItem[]] = [
   {
     name: "Classic Coffee",
-    price: 11,
+    price: 120,
     image: laponiBrownAsset.url,
     description: "Freshly prepared cold coffee in a chilled bottle with a rich aroma and smooth taste.",
   },
   {
     name: "Flying Coffee",
-    price: 13,
+    price: 120,
     image: laponiCaramelAsset.url,
     description: "A beautiful caramel cold coffee with a smooth and refreshing taste.",
   },
   {
     name: "Premium Coffee",
-    price: 15,
+    price: 120,
     image: laponiPinkAsset.url,
     description: "Premium cold coffee prepared with carefully selected ingredients.",
   },
   {
     name: "Cafe Special",
-    price: 17,
+    price: 120,
     image: laponiPurpleAsset.url,
     description: "Our special cafe drink with a rich flavour and creamy finish.",
   },
   {
     name: "Signature Coffee",
-    price: 19,
+    price: 120,
     image: laponiBrownAsset.url,
     description: "A signature cold coffee with a premium cafe-style presentation.",
   },
   {
     name: "Chocolate Coffee",
-    price: 21,
+    price: 120,
     image: laponiCaramelAsset.url,
     description: "A delicious chocolate coffee with a rich and smooth finish.",
   },
@@ -232,7 +232,7 @@ function CafeMenu() {
                   </div>
                   <h2 className="mt-3 min-h-10 text-[15px] font-bold leading-tight text-foreground">{coffee.name}</h2>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-display text-lg font-bold text-primary">${coffee.price.toFixed(2)}</span>
+                    <span className="font-display text-lg font-bold text-primary">₹{coffee.price}</span>
                     <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground">
                       <ArrowRight size={17} aria-hidden="true" />
                     </span>
@@ -256,7 +256,7 @@ function CafeMenu() {
               <Sparkles size={12} aria-hidden="true" /> Special
             </div>
             <h2 className="font-display text-[31px] font-bold leading-[0.98]">{special.name}</h2>
-            <p className="mt-4 font-display text-xl font-bold text-highlight">${special.price.toFixed(2)}</p>
+            <p className="mt-4 font-display text-xl font-bold text-highlight">₹{special.price}</p>
           </div>
           <img
             key={special.name}
@@ -321,7 +321,7 @@ function CafeMenu() {
                   <div className="mt-6 flex items-center justify-between">
                     <div>
                       <p className="text-[10px] uppercase tracking-[0.16em] text-primary-foreground/60">Price</p>
-                      <p className="font-display text-3xl font-bold text-highlight">${selected.price.toFixed(2)}</p>
+                      <p className="font-display text-3xl font-bold text-highlight">₹{selected.price}</p>
                     </div>
                     <AppButton onClick={() => setToast(`${selected.name} selected`)} className="h-12 gap-2 rounded-md bg-primary-foreground px-5 text-sm font-bold text-primary shadow-soft hover:bg-highlight">
                       Choose drink <ArrowRight size={17} />
