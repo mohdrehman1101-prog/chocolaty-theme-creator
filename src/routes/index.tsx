@@ -25,7 +25,7 @@ type CoffeeItem = {
   description: string;
 };
 
-const coffees: CoffeeItem[] = [
+const coffees: [CoffeeItem, ...CoffeeItem[]] = [
   {
     name: "Classic Coffee",
     price: 11,
@@ -113,9 +113,7 @@ function CafeMenu() {
       : coffees;
   }, [query]);
 
-  const special = coffees[specialIndex];
-
-  if (!special) return null;
+  const special = coffees[specialIndex] ?? coffees[0];
 
   useEffect(() => {
     if (!selected) return;
