@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the café menu as a client-side React experience; it needs no persistent backend because menu state is temporary.
+- Store all served coffee imagery through Lovable Assets so the menu does not depend on third-party image hosts.
