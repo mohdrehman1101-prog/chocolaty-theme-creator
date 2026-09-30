@@ -115,6 +115,8 @@ function CafeMenu() {
 
   const special = coffees[specialIndex];
 
+  if (!special) return null;
+
   useEffect(() => {
     if (!selected) return;
     const onKeyDown = (event: KeyboardEvent) => {
