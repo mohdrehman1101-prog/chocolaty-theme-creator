@@ -11,12 +11,10 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState, type ButtonHTMLAttributes, type ReactNode } from "react";
 
-import chocolateAsset from "../assets/chocolate.png.asset.json";
-import classicAsset from "../assets/classic.png.asset.json";
-import flyingAsset from "../assets/flying.png.asset.json";
-import premiumAsset from "../assets/premium.png.asset.json";
-import signatureAsset from "../assets/signature.png.asset.json";
-import specialAsset from "../assets/special.png.asset.json";
+import laponiBrownAsset from "../assets/laponi-brown.png.asset.json";
+import laponiCaramelAsset from "../assets/laponi-caramel.png.asset.json";
+import laponiPinkAsset from "../assets/laponi-pink.png.asset.json";
+import laponiPurpleAsset from "../assets/laponi-purple.png.asset.json";
 
 type CoffeeItem = {
   name: string;
