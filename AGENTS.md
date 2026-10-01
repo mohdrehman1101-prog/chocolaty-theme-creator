@@ -9,5 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the café menu as a client-side React experience; it needs no persistent backend because menu state is temporary.
-- Store all served coffee imagery through Lovable Assets so the menu does not depend on third-party image hosts.
+# Project rules
+
+- Keep the café menu a client-side React experience; menu state is temporary, so no backend is needed.
+- Store menu images and videos as real files in src/assets and import them, so Vite bundles them; this keeps them working on any host (Lovable, Netlify).
