@@ -11,10 +11,10 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState, type ButtonHTMLAttributes, type ReactNode } from "react";
 
-import laponiBrownAsset from "../assets/laponi-brown.png.asset.json";
-import laponiCaramelAsset from "../assets/laponi-caramel.png.asset.json";
-import laponiPinkAsset from "../assets/laponi-pink.png.asset.json";
-import laponiPurpleAsset from "../assets/laponi-purple.png.asset.json";
+import laponiBrownAsset from "../assets/laponi-brown.png";
+import laponiCaramelAsset from "../assets/laponi-caramel.png";
+import laponiPinkAsset from "../assets/laponi-pink.png";
+import laponiPurpleAsset from "../assets/laponi-purple.png";
 
 type CoffeeItem = {
   name: string;
@@ -27,37 +27,37 @@ const coffees: [CoffeeItem, ...CoffeeItem[]] = [
   {
     name: "Classic Coffee",
     price: 120,
-    image: laponiBrownAsset.url,
+    image: laponiBrownAsset,
     description: "Freshly prepared cold coffee in a chilled bottle with a rich aroma and smooth taste.",
   },
   {
     name: "Flying Coffee",
     price: 120,
-    image: laponiCaramelAsset.url,
+    image: laponiCaramelAsset,
     description: "A beautiful caramel cold coffee with a smooth and refreshing taste.",
   },
   {
     name: "Premium Coffee",
     price: 120,
-    image: laponiPinkAsset.url,
+    image: laponiPinkAsset,
     description: "Premium cold coffee prepared with carefully selected ingredients.",
   },
   {
     name: "Cafe Special",
     price: 120,
-    image: laponiPurpleAsset.url,
+    image: laponiPurpleAsset,
     description: "Our special cafe drink with a rich flavour and creamy finish.",
   },
   {
     name: "Signature Coffee",
     price: 120,
-    image: laponiBrownAsset.url,
+    image: laponiBrownAsset,
     description: "A signature cold coffee with a premium cafe-style presentation.",
   },
   {
     name: "Chocolate Coffee",
     price: 120,
-    image: laponiCaramelAsset.url,
+    image: laponiCaramelAsset,
     description: "A delicious chocolate coffee with a rich and smooth finish.",
   },
 ];
