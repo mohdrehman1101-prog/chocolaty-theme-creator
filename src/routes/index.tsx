@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowLeft,
   ArrowRight,
+  Coffee,
   Heart,
   Search,
   Sparkles,
@@ -306,7 +307,7 @@ function CafeMenu() {
               <div className="relative flex min-h-[670px] flex-1 flex-col overflow-hidden rounded-t-[34px] bg-primary px-6 pb-8 pt-9 text-primary-foreground">
                 <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-special-ring" />
                 <div className="relative z-10">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">Coffee House signature</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">LAPONI signature</p>
                   <h1 id="detail-title" className="mt-2 max-w-[280px] font-display text-[38px] font-bold leading-[0.98]">{selected.name}</h1>
                   <div className="mt-4 flex items-center gap-2 text-highlight">
                     <div className="flex" aria-label="Rated 4.8 out of 5">
