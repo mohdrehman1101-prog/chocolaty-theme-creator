@@ -39,16 +39,16 @@ const coffees: [CoffeeItem, ...CoffeeItem[]] = [
     description: "A beautiful caramel cold coffee with a smooth and refreshing taste.",
   },
   {
-    name: "Premium Coffee",
+    name: "Strawberry Shake",
     price: 120,
     image: laponiPinkAsset,
-    description: "Premium cold coffee prepared with carefully selected ingredients.",
+    description: "A creamy strawberry shake blended smooth with a sweet, refreshing finish.",
   },
   {
-    name: "Cafe Special",
+    name: "Blueberry Shake",
     price: 120,
     image: laponiPurpleAsset,
-    description: "Our special cafe drink with a rich flavour and creamy finish.",
+    description: "Our blueberry shake with a rich flavour and creamy finish.",
   },
   {
     name: "Signature Coffee",
