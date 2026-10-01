@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState, type ButtonHTMLAttributes, type ReactNode } from "react";
 
+import laponiLogoAsset from "../assets/laponi-logo.png";
+
 import laponiBrownAsset from "../assets/laponi-brown.png";
 import laponiCaramelAsset from "../assets/laponi-caramel.png";
 import laponiPinkAsset from "../assets/laponi-pink.png";
@@ -65,12 +67,12 @@ const coffees: [CoffeeItem, ...CoffeeItem[]] = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Coffee House — Premium Café Menu" },
+      { title: "LAPONI — Premium Café Menu" },
       {
         name: "description",
-        content: "Explore Coffee House's premium coffee menu, signature drinks, and daily specials.",
+        content: "Explore LAPONI's premium coffee menu, signature drinks, and daily specials.",
       },
-      { property: "og:title", content: "Coffee House — Premium Café Menu" },
+      { property: "og:title", content: "LAPONI — Premium Café Menu" },
       {
         property: "og:description",
         content: "Rich coffee, smooth flavours, and premium café favourites.",
@@ -153,11 +155,13 @@ function CafeMenu() {
           <div className="absolute -right-10 -top-16 h-44 w-44 rounded-full border border-primary-foreground/10" />
           <div className="absolute -right-2 -top-7 h-28 w-28 rounded-full border border-primary-foreground/10" />
           <div className="relative flex items-center gap-4">
-            <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-primary-foreground text-primary shadow-soft">
-              <Coffee size={28} strokeWidth={1.8} aria-hidden="true" />
-            </div>
+            <img
+              src={laponiLogoAsset}
+              alt="Laponi Cold Coffee logo"
+              className="h-16 w-16 shrink-0 object-contain drop-shadow-[0_8px_6px_var(--image-shadow)]"
+            />
             <div>
-              <p className="font-display text-[25px] font-bold leading-tight">Coffee House</p>
+              <p className="font-display text-[25px] font-bold leading-tight">LAPONI</p>
               <p className="mt-1 text-xs text-primary-foreground/70">Good coffee. Good mood.</p>
             </div>
           </div>
@@ -303,7 +307,7 @@ function CafeMenu() {
               <div className="relative flex min-h-[670px] flex-1 flex-col overflow-hidden rounded-t-[34px] bg-primary px-6 pb-8 pt-9 text-primary-foreground">
                 <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-special-ring" />
                 <div className="relative z-10">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">Coffee House signature</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">LAPONI signature</p>
                   <h1 id="detail-title" className="mt-2 max-w-[280px] font-display text-[38px] font-bold leading-[0.98]">{selected.name}</h1>
                   <div className="mt-4 flex items-center gap-2 text-highlight">
                     <div className="flex" aria-label="Rated 4.8 out of 5">
