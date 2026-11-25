@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState, type ButtonHTMLAttributes, type ReactNode } from "react";
 
-import laponiLogoAsset from "../assets/laponi-logo.png";
+import sayWowLogoAsset from "../assets/say-wow-logo.png";
 
 import laponiBrownAsset from "../assets/laponi-brown.png";
 import laponiCaramelAsset from "../assets/laponi-caramel.png";
@@ -67,15 +67,15 @@ const coffees: [CoffeeItem, ...CoffeeItem[]] = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LAPONI — Premium Café Menu" },
+      { title: "Say Wow — Premium Café Menu" },
       {
         name: "description",
-        content: "Explore LAPONI's premium coffee menu, signature drinks, and daily specials.",
+        content: "Explore Say Wow's premium coffee menu, signature drinks, and daily specials.",
       },
-      { property: "og:title", content: "LAPONI — Premium Café Menu" },
+      { property: "og:title", content: "Say Wow — Premium Café Menu" },
       {
         property: "og:description",
-        content: "Rich coffee, smooth flavours, and premium café favourites.",
+        content: "Rich coffee, smooth flavours, and Say Wow café favourites.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -156,12 +156,12 @@ function CafeMenu() {
           <div className="absolute -right-2 -top-7 h-28 w-28 rounded-full border border-primary-foreground/10" />
           <div className="relative flex items-center gap-4">
             <img
-              src={laponiLogoAsset}
-              alt="Laponi Cold Coffee logo"
-              className="h-16 w-16 shrink-0 object-contain drop-shadow-[0_8px_6px_var(--image-shadow)]"
+              src={sayWowLogoAsset}
+              alt="Say Wow logo"
+              className="h-14 w-[118px] shrink-0 object-contain drop-shadow-[0_8px_6px_var(--image-shadow)]"
             />
             <div>
-              <p className="font-display text-[25px] font-bold leading-tight">LAPONI</p>
+              <p className="font-display text-[25px] font-bold leading-tight">SAY WOW</p>
               <p className="mt-1 text-xs text-primary-foreground/70">Good coffee. Good mood.</p>
             </div>
           </div>
@@ -227,7 +227,7 @@ function CafeMenu() {
                   >
                     <Heart size={17} fill={favourites.has(coffee.name) ? "currentColor" : "none"} />
                   </AppButton>
-                  <div className="grid h-36 place-items-center rounded-md bg-muted">
+                  <div className="grid h-36 place-items-center rounded-md bg-highlight">
                     <img
                       src={coffee.image}
                       alt={coffee.name}
@@ -256,7 +256,7 @@ function CafeMenu() {
           <div className="absolute -right-16 -top-12 h-64 w-64 rounded-full bg-special-ring" />
           <div className="absolute -bottom-28 -left-20 h-52 w-52 rounded-full border border-primary-foreground/10" />
           <div className="relative z-10 w-[46%]">
-            <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-primary-foreground/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em]">
+            <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-accent-foreground">
               <Sparkles size={12} aria-hidden="true" /> Special
             </div>
             <h2 className="font-display text-[31px] font-bold leading-[0.98]">{special.name}</h2>
@@ -307,7 +307,7 @@ function CafeMenu() {
               <div className="relative flex min-h-[670px] flex-1 flex-col overflow-hidden rounded-t-[34px] bg-primary px-6 pb-8 pt-9 text-primary-foreground">
                 <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-special-ring" />
                 <div className="relative z-10">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">LAPONI signature</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-highlight">SAY WOW signature</p>
                   <h1 id="detail-title" className="mt-2 max-w-[280px] font-display text-[38px] font-bold leading-[0.98]">{selected.name}</h1>
                   <div className="mt-4 flex items-center gap-2 text-highlight">
                     <div className="flex" aria-label="Rated 4.8 out of 5">

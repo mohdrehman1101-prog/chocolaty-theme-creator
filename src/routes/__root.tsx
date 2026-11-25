@@ -79,12 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LAPONI" },
-      { name: "description", content: "LAPONI premium café menu." },
-      { name: "author", content: "LAPONI" },
+      { title: "Say Wow" },
+      { name: "description", content: "Say Wow premium café menu." },
+      { name: "author", content: "Say Wow" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
